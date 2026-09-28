@@ -8,9 +8,11 @@ const DEFAULT_COLUMN_COUNT = 3;
 function App() {
   const [columnCount, setColunCount] = useState(DEFAULT_COLUMN_COUNT);
 
+  const handleIncrementColumnCount = () => setColunCount(columnCount + 1);
+
   return (
     <>
-      <Header />
+      <Header handleIncrementColumnCount={handleIncrementColumnCount} />
       <main className={styles.main}>
         {Array.from({ length: columnCount }, (_, index) => (
           <ColumnLayout key={index} />
