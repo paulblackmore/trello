@@ -1,3 +1,11 @@
 import styles from './Header.module.css';
 
-export const Header = () => <header className={styles.header}>Header</header>;
+const AddColumnButton = () => (
+  <button className={styles.button}>+ Add column</button>
+);
+
+export const Header = () => (
+  <header className={styles.header}>
+    <AddColumnButton />
+  </header>
+);
