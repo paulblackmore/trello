@@ -1,13 +1,3 @@
-.header {
-  height: 60px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #92c3c3;
-}
-
 .main {
   display: flex;
   flex-direction: row;

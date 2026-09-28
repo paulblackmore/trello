@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './App.module.css';
+import { Header } from './components/header/Header';
 import { ColumnLayout } from './components/column/ColumnLayout';
 
 const DEFAULT_COLUMN_COUNT = 3;
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-      <header className={styles.header}>Header</header>
+      <Header />
       <main className={styles.main}>
         {Array.from({ length: columnCount }, (_, index) => (
           <ColumnLayout key={index} />
