@@ -1,20 +1,17 @@
 import styles from './Header.module.css';
 
 type Props = {
-  handleIncrementColumnCount: () => void;
+  handleAddColumn: () => void;
 };
 
-const AddColumnButton = ({ handleIncrementColumnCount }: Props) => (
-  <button
-    className={styles.button}
-    onClick={() => handleIncrementColumnCount()}
-  >
+const AddColumnButton = ({ handleAddColumn }: Props) => (
+  <button className={styles.button} onClick={handleAddColumn}>
     + Add column
   </button>
 );
 
-export const Header = ({ handleIncrementColumnCount }: Props) => (
+export const Header = ({ handleAddColumn }: Props) => (
   <header className={styles.header}>
-    <AddColumnButton handleIncrementColumnCount={handleIncrementColumnCount} />
+    <AddColumnButton handleAddColumn={handleAddColumn} />
   </header>
 );
