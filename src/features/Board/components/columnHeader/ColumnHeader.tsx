@@ -5,7 +5,5 @@ type Props = {
 };
 
 export const ColumnHeader = ({ handleAddColumn }: Props) => (
-  <OutlinedButton handleAddColumn={handleAddColumn}>
-    + Add column
-  </OutlinedButton>
+  <OutlinedButton onClick={handleAddColumn}>+ Add column</OutlinedButton>
 );

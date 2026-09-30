@@ -1,13 +1,8 @@
-import type { ReactNode } from 'react';
 import styles from './Button.module.css';
+import type { Props } from './types';
 
-type Props = {
-  children: ReactNode;
-  handleAddColumn: () => void;
-};
-
-export const OutlinedButton = ({ children, handleAddColumn }: Props) => (
-  <button className={styles.buttonOutline} onClick={handleAddColumn}>
+export const OutlinedButton = ({ children, onClick }: Props) => (
+  <button className={styles.buttonOutline} onClick={onClick}>
     {children}
   </button>
 );

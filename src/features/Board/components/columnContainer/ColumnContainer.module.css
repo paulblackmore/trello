@@ -17,6 +17,14 @@
   width: 100%;
 }
 
+.headerLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .title {
   text-align: left;
   margin: 8px;
@@ -27,4 +35,12 @@
   height: 1px;
   background-color: #ccc;
   margin: 5px 0;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
 }

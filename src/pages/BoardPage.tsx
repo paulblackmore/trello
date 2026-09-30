@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ColumnLayout } from '../features/Board/components/column/ColumnLayout';
+import { ColumnContainer } from '../features/Board/components/columnContainer/ColumnContainer';
 import { ColumnHeader } from '../features/Board/components/columnHeader/ColumnHeader';
 import { DEFAULT_COLUMNS_DATA } from '../data';
 import { Header } from '../components/header';
@@ -22,7 +22,7 @@ export default function BoardPage() {
       </Header>
       <main className={styles.container}>
         {columns.map((column) => (
-          <ColumnLayout key={column.id} column={column} />
+          <ColumnContainer key={column.id} column={column} />
         ))}
       </main>
     </>
