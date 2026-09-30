@@ -11,7 +11,7 @@ export default function BoardPage() {
   const handleAddColumn = () => {
     setColumns([
       ...columns,
-      { id: columns.length + 1, title: 'Placheolder title' },
+      { id: columns.length + 1, title: 'Placheolder title', cards: [] },
     ]);
   };
 
