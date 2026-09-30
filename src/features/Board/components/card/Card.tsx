@@ -1,3 +1,5 @@
+import { Trash } from 'lucide-react';
+import { Header } from '../header/Header';
 import styles from './Card.module.css';
 
 type Props = {
@@ -11,11 +13,13 @@ type Props = {
 export const Card = ({ card }: Props) => {
   return (
     <div className={styles.container}>
-      <header>
+      <Header>
         <h5>{card.title}</h5>
-      </header>
-      <p>{card.description}</p>
-      <footer>{/* <p>Status</p> */}</footer>
+        <Trash color='#3e9392' size={15} />
+      </Header>
+      <div>
+        <p>{card.description}</p>
+      </div>
     </div>
   );
 };

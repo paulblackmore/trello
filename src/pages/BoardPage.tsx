@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { ColumnContainer } from '../features/Board/components/columnContainer/ColumnContainer';
-import { ColumnHeader } from '../features/Board/components/columnHeader/ColumnHeader';
+import { Container } from '../features/Board/components/column/container/Container';
 import { DEFAULT_COLUMNS_DATA } from '../data';
 import { Header } from '../components/header';
+import { OutlinedButton } from '../components/button';
 import styles from './BoardPage.module.css';
 
 export default function BoardPage() {
@@ -18,11 +18,11 @@ export default function BoardPage() {
   return (
     <>
       <Header>
-        <ColumnHeader handleAddColumn={handleAddColumn} />
+        <OutlinedButton onClick={handleAddColumn}>+ Add column</OutlinedButton>
       </Header>
       <main className={styles.container}>
         {columns.map((column) => (
-          <ColumnContainer key={column.id} column={column} />
+          <Container key={column.id} column={column} />
         ))}
       </main>
     </>

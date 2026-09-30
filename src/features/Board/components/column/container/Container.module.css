@@ -19,14 +19,6 @@
   width: 100%;
 }
 
-.headerLayout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .title {
   text-align: left;
   margin: 8px;
@@ -47,7 +39,7 @@
   gap: 5px;
 }
 
-.cardContent {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;

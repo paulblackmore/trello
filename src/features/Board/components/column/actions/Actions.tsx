@@ -1,8 +1,8 @@
 import { Trash, Plus } from 'lucide-react';
-import { UnstyledButton } from '../../../../components/button';
-import styles from './ColumnActions.module.css';
+import { UnstyledButton } from '../../../../../components/button';
+import styles from './Actions.module.css';
 
-export const ColumnActions = () => {
+export const Actions = () => {
   return (
     <div className={styles.container}>
       <UnstyledButton onClick={() => {}}>
