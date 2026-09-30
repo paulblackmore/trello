@@ -7,6 +7,8 @@
   min-height: 150px;
   width: 300px;
   background-color: azure;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 0.75rem #92c3c3);
 }
 
 .header {
@@ -33,7 +35,7 @@
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #ccc;
+  background-color: #92c3c3;
   margin: 5px 0;
 }
 
