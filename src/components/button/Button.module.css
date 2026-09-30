@@ -2,12 +2,13 @@
   background-color: transparent;
   border: 1px solid #629797;
   border-radius: 5px;
-  color: white;
+  color: #629797;
   padding: 10px 20px;
   text-align: center;
   cursor: pointer;
   &:hover {
     background-color: #629797;
+    color: #fff;
   }
 }
 
