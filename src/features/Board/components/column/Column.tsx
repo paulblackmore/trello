@@ -4,6 +4,7 @@ import { Header } from '../header/Header';
 import { UnstyledButton } from '../../../../components/button';
 import { Plus, Trash } from 'lucide-react';
 import type { ColumnData } from '../../types';
+import { EmptyCard } from '../empty-card/EmptyCard';
 
 type Props = {
   column: ColumnData;
@@ -24,9 +25,13 @@ export const Column = ({ column }: Props) => {
         </div>
       </Header>
       <div className={styles.content}>
-        {column.cards.map((card) => (
-          <Card key={card.id} card={card} />
-        ))}
+        {column.cards.length ? (
+          column.cards.map((card) => <Card key={card.id} card={card} />)
+        ) : (
+          <UnstyledButton onClick={() => {}}>
+            <EmptyCard />
+          </UnstyledButton>
+        )}
       </div>
     </main>
   );

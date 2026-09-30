@@ -1,32 +1,32 @@
 export const DEFAULT_COLUMNS_DATA = [
   {
     id: 1,
-    title: 'Placheolder title',
+    title: 'Placeholder title',
     cards: [],
   },
   {
     id: 2,
-    title: 'Placheolder title',
+    title: 'Placeholder title',
     cards: [],
   },
   {
     id: 3,
-    title: 'Placheolder title',
+    title: 'Placeholder title',
     cards: [
       {
         id: 1,
         title: 'Card Title',
-        description: 'Placheolder description',
+        description: 'Placeholder description',
       },
       {
         id: 1,
         title: 'Card Title',
-        description: 'Placheolder description',
+        description: 'Placeholder description',
       },
       {
         id: 1,
         title: 'Card Title',
-        description: 'Placheolder description',
+        description: 'Placeholder description',
       },
     ],
   },
