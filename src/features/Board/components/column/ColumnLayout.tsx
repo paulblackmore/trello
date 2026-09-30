@@ -1,4 +1,4 @@
-import type { ColumnData } from '../../types';
+import type { ColumnData } from '../../../../types';
 import styles from './Column.module.css';
 
 type Props = {

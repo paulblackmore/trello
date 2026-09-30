@@ -1,17 +1,10 @@
+import type { ReactNode } from 'react';
 import styles from './Header.module.css';
 
 type Props = {
-  handleAddColumn: () => void;
+  children: ReactNode;
 };
 
-const AddColumnButton = ({ handleAddColumn }: Props) => (
-  <button className={styles.button} onClick={handleAddColumn}>
-    + Add column
-  </button>
-);
-
-export const Header = ({ handleAddColumn }: Props) => (
-  <header className={styles.header}>
-    <AddColumnButton handleAddColumn={handleAddColumn} />
-  </header>
+export const Header = ({ children }: Props) => (
+  <header className={styles.header}>{children}</header>
 );
