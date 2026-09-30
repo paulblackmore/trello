@@ -1,0 +1,14 @@
+.container {
+  padding: 5px;
+  background-color: #beebeb;
+  border-radius: 5px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: move;
+  &:hover {
+    background-color: #a3dddd;
+  }
+}

@@ -1,6 +1,7 @@
 import { ColumnActions } from '../columnActions/ColumnActions';
 import type { ColumnData } from '../../types';
 import styles from './ColumnContainer.module.css';
+import { Card } from '../card/Card';
 
 type Props = {
   column: ColumnData;
@@ -16,6 +17,11 @@ export const ColumnContainer = ({ column }: Props) => {
         </div>
         <div className={styles.divider} />
       </header>
+      <div className={styles.cardContent}>
+        {column.cards.map((card) => (
+          <Card key={card.id} card={card} />
+        ))}
+      </div>
     </main>
   );
 };

@@ -46,3 +46,12 @@
   align-items: center;
   gap: 5px;
 }
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 7px;
+  width: 100%;
+}
