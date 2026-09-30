@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { ColumnLayout } from '../features/Board/components/column/ColumnLayout';
 import { ColumnHeader } from '../features/Board/components/columnHeader/ColumnHeader';
 import { DEFAULT_COLUMNS_DATA } from '../data';
-import styles from './BoardPage.module.css';
 import { Header } from '../components/header';
+import styles from './BoardPage.module.css';
 
 export default function BoardPage() {
   const [columns, setColumns] = useState(DEFAULT_COLUMNS_DATA);

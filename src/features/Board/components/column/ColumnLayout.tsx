@@ -6,5 +6,12 @@ type Props = {
 };
 
 export const ColumnLayout = ({ column }: Props) => {
-  return <div className={styles.container}>{column.title}</div>;
+  return (
+    <main className={styles.container}>
+      <header className={styles.header}>
+        <h4 className={styles.title}>{column.title}</h4>
+        <div className={styles.divider} />
+      </header>
+    </main>
+  );
 };
