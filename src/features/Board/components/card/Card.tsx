@@ -1,13 +1,10 @@
 import { Trash } from 'lucide-react';
 import { Header } from '../header/Header';
 import styles from './Card.module.css';
+import type { CardData } from '../../types';
 
 type Props = {
-  card: {
-    id: number;
-    title: string;
-    description: string;
-  };
+  card: CardData;
 };
 
 export const Card = ({ card }: Props) => {
@@ -20,6 +17,7 @@ export const Card = ({ card }: Props) => {
       <div>
         <p>{card.description}</p>
       </div>
+      <footer>{card.status}</footer>
     </div>
   );
 };
