@@ -5,10 +5,19 @@
   min-height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   cursor: move;
   &:hover {
     background-color: #a3dddd;
   }
+}
+
+.statusPill {
+  padding: 2px 4px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  width: 90px;
 }

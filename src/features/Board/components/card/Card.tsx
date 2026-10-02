@@ -17,7 +17,21 @@ export const Card = ({ card }: Props) => {
       <div>
         <p>{card.description}</p>
       </div>
-      <footer>{card.status}</footer>
+      <footer>
+        <div
+          className={styles.statusPill}
+          style={{
+            backgroundColor:
+              card.status === 'OPEN'
+                ? '#45be45'
+                : card.status === 'CLOSED'
+                ? '#f04d4d'
+                : '#ff890b',
+          }}
+        >
+          <span>{card.status}</span>
+        </div>
+      </footer>
     </div>
   );
 };
