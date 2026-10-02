@@ -8,6 +8,13 @@ type Props = {
 };
 
 export const Card = ({ card }: Props) => {
+  const handleStatusColor = () =>
+    card.status === 'OPEN'
+      ? '#45be45'
+      : card.status === 'CLOSED'
+      ? '#f04d4d'
+      : '#ff890b';
+
   return (
     <div className={styles.container}>
       <Header>
@@ -21,12 +28,7 @@ export const Card = ({ card }: Props) => {
         <div
           className={styles.statusPill}
           style={{
-            backgroundColor:
-              card.status === 'OPEN'
-                ? '#45be45'
-                : card.status === 'CLOSED'
-                ? '#f04d4d'
-                : '#ff890b',
+            backgroundColor: handleStatusColor(),
           }}
         >
           <span>{card.status}</span>
