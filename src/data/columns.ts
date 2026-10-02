@@ -15,24 +15,24 @@ export const DEFAULT_COLUMNS_DATA = [
     cards: [
       {
         id: 1,
-        title: 'Card Title',
+        title: 'Lorem ipsum dolor sit amet',
         description:
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient',
         status: 'OPEN',
       },
       {
-        id: 1,
-        title: 'Card Title',
+        id: 2,
+        title: 'Lorem ipsum dolor',
         description:
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
         status: 'CLOSED',
       },
       {
-        id: 1,
-        title: 'Card Title',
+        id: 3,
+        title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
         description:
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        status: 'IN PROGRESS',
+        status: 'IN_PROGRESS',
       },
     ],
   },
