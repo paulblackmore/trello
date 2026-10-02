@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 5px;
-  min-height: 150px;
-  width: 300px;
+  padding: 0.3125rem;
+  min-height: 9.375rem;
+  width: 18.75rem;
   background-color: azure;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   filter: drop-shadow(0 0 0.75rem #92c3c3);
 }
 
@@ -24,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
-  gap: 7px;
+  gap: 0.4375rem;
   width: 100%;
 }
 
@@ -33,10 +33,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .title {
   text-align: left;
-  margin: 8px;
+  margin: 0.5rem;
 }

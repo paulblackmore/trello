@@ -1,8 +1,8 @@
 .container {
-  padding: 5px;
+  padding: 0.3125rem;
   background-color: #beebeb;
-  border-radius: 5px;
-  min-height: 100px;
+  border-radius: 0.3125rem;
+  min-height: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,10 +14,10 @@
 }
 
 .statusPill {
-  padding: 2px 4px;
-  border-radius: 5px;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.3125rem;
   text-align: center;
   color: #fff;
-  font-size: 12px;
-  width: 90px;
+  font-size: 0.75rem;
+  width: 5.625rem;
 }
