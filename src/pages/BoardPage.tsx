@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { Column } from '../features/Board/components/column/Column';
 import { DEFAULT_COLUMNS_DATA } from '../data';
 import { Header } from '../components/header';
-import { OutlinedButton } from '../components/button';
 import styles from './BoardPage.module.css';
 import type { ColumnData } from '../features/Board/types';
-import { StatusActions } from '../features/Board/components/status-actions/StatusActions';
+import { StatusCount } from '../features/Header/components/status-count/StatusCount';
+import { Actions } from '../features/Header/components/actions/Actions';
+import { CountDown } from '../features/Header/components/count-down/CountDown';
 
 export default function BoardPage() {
   const [columns, setColumns] = useState(DEFAULT_COLUMNS_DATA);
@@ -24,8 +25,9 @@ export default function BoardPage() {
   return (
     <>
       <Header>
-        <StatusActions />
-        <OutlinedButton onClick={handleAddColumn}>+ Add column</OutlinedButton>
+        <CountDown />
+        <StatusCount />
+        <Actions handleAddColumn={handleAddColumn} />
       </Header>
       <main className={styles.container}>
         {columns.map((column) => (
