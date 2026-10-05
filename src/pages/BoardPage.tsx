@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Column } from '../features/Board/components/column/Column';
+import { Column } from '../features/column/components/column/Column';
 import { DEFAULT_COLUMNS_DATA } from '../data';
 import { Header } from '../components/header';
 import styles from './BoardPage.module.css';
-import type { ColumnData } from '../features/Board/types';
-import { StatusCount } from '../features/Header/components/status-count/StatusCount';
-import { Actions } from '../features/Header/components/actions/Actions';
-import { CountDown } from '../features/Header/components/count-down/CountDown';
+import type { ColumnData } from '../features/column/types';
+import { StatusCount } from '../features/header/components/status-count/StatusCount';
+import { Actions } from '../features/header/components/actions/Actions';
+import { CountDown } from '../features/header/components/count-down/CountDown';
 
 export default function BoardPage() {
   const [columns, setColumns] = useState(DEFAULT_COLUMNS_DATA);

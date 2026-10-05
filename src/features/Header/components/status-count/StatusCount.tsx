@@ -1,4 +1,4 @@
-import { STATUS } from '../../../Board/const';
+import { STATUS } from '../../const';
 import styles from './StatusCount.module.css';
 
 export const StatusCount = () => {

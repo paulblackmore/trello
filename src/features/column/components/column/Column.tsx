@@ -1,10 +1,10 @@
-import { Card } from '../card/Card';
+import { Card } from '../../../card/components/card/Card';
 import styles from './Column.module.css';
 import { Header } from '../header/Header';
 import { IconButton, OutlinedButton } from '../../../../components/button';
 import { Trash } from 'lucide-react';
 import type { ColumnData } from '../../types';
-import { EmptyCard } from '../empty-card/EmptyCard';
+import { EmptyCard } from '../../../card/components/empty-card/EmptyCard';
 
 type Props = {
   column: ColumnData;
