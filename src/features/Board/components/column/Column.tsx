@@ -1,7 +1,7 @@
 import { Card } from '../card/Card';
 import styles from './Column.module.css';
 import { Header } from '../header/Header';
-import { UnstyledButton } from '../../../../components/button';
+import { IconButton } from '../../../../components/button';
 import { Plus, Trash } from 'lucide-react';
 import type { ColumnData } from '../../types';
 import { EmptyCard } from '../empty-card/EmptyCard';
@@ -16,21 +16,21 @@ export const Column = ({ column }: Props) => {
       <Header>
         <h4 className={styles.title}>{column.title}</h4>
         <div className={styles.actions}>
-          <UnstyledButton onClick={() => {}}>
+          <IconButton onClick={() => {}}>
             <Plus color='#3e9392' size={15} />
-          </UnstyledButton>
-          <UnstyledButton onClick={() => {}}>
+          </IconButton>
+          <IconButton onClick={() => {}}>
             <Trash color='#3e9392' size={15} />
-          </UnstyledButton>
+          </IconButton>
         </div>
       </Header>
       <div className={styles.content}>
         {column.cards.length ? (
           column.cards.map((card) => <Card key={card.id} card={card} />)
         ) : (
-          <UnstyledButton onClick={() => {}}>
+          <IconButton onClick={() => {}}>
             <EmptyCard />
-          </UnstyledButton>
+          </IconButton>
         )}
       </div>
     </main>
