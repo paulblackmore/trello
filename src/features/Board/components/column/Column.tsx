@@ -1,8 +1,8 @@
 import { Card } from '../card/Card';
 import styles from './Column.module.css';
 import { Header } from '../header/Header';
-import { IconButton } from '../../../../components/button';
-import { Plus, Trash } from 'lucide-react';
+import { IconButton, OutlinedButton } from '../../../../components/button';
+import { Trash } from 'lucide-react';
 import type { ColumnData } from '../../types';
 import { EmptyCard } from '../empty-card/EmptyCard';
 
@@ -16,9 +16,9 @@ export const Column = ({ column }: Props) => {
       <Header>
         <h4 className={styles.title}>{column.title}</h4>
         <div className={styles.actions}>
-          <IconButton onClick={() => {}}>
-            <Plus color='#3e9392' size={15} />
-          </IconButton>
+          <OutlinedButton onClick={() => {}}>
+            <span>+ Add card</span>
+          </OutlinedButton>
           <IconButton onClick={() => {}}>
             <Trash color='#3e9392' size={15} />
           </IconButton>
