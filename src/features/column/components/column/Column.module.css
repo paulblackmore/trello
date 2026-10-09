@@ -11,14 +11,6 @@
   filter: drop-shadow(0 0 0.75rem #92c3c3);
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-
 .content {
   display: flex;
   flex-direction: column;
