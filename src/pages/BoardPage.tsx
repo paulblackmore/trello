@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Column } from '../features/column/components/column/Column';
 import { DEFAULT_COLUMNS_DATA } from '../data';
-import styles from './BoardPage.module.css';
 import type { ColumnData } from '../features/column/types';
 import { StatusCount } from '../features/header/components/status-count/StatusCount';
 import { Actions } from '../features/header/components/actions/Actions';
@@ -23,19 +22,17 @@ export default function BoardPage() {
   };
 
   return (
-    <>
+    <Container fluid mih='100vh'>
       <Flex mih={50} gap='md' justify='space-between' align='center' p='md'>
         <CountDown />
         <StatusCount />
         <Actions handleAddColumn={handleAddColumn} />
       </Flex>
-      <Container>
-        <main className={styles.container}>
-          {columns.map((column) => (
-            <Column key={column.id} column={column as ColumnData} />
-          ))}
-        </main>
-      </Container>
-    </>
+      <Flex mih={50} gap='md' justify='center' align='flex-start' p='md'>
+        {columns.map((column) => (
+          <Column key={column.id} column={column as ColumnData} />
+        ))}
+      </Flex>
+    </Container>
   );
 }

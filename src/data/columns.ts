@@ -28,6 +28,20 @@ export const DEFAULT_COLUMNS_DATA = [
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
         status: 'CLOSED',
       },
+      {
+        id: 2,
+        title: 'Lorem ipsum dolor',
+        description:
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        status: 'CLOSED',
+      },
+      {
+        id: 2,
+        title: 'Lorem ipsum dolor',
+        description:
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+        status: 'CLOSED',
+      },
     ],
   },
 ];
