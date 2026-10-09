@@ -9,6 +9,7 @@ import {
   Flex,
   Title,
   Text,
+  Paper,
 } from '@mantine/core';
 type Props = {
   column: ColumnData;
@@ -16,17 +17,7 @@ type Props = {
 
 export const Column = ({ column }: Props) => {
   return (
-    <Flex
-      direction='column'
-      justify='flex-start'
-      align='center'
-      w={300}
-      mih={200}
-      gap={2}
-      bg='#f1f9f1'
-      p={10}
-      bdrs={5}
-    >
+    <Paper w={300} mih={200} bg='#f1f9f1' p={10} bdrs={5}>
       <Flex h={40} justify='space-between' align='center' w='100%'>
         <Title order={4}>{column.title}</Title>
         <Flex gap={5}>
@@ -47,6 +38,6 @@ export const Column = ({ column }: Props) => {
           </UnstyledButton>
         )}
       </Flex>
-    </Flex>
+    </Paper>
   );
 };
