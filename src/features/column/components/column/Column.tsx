@@ -1,6 +1,6 @@
 import { Card } from '../../../card/components/card/Card';
 import styles from './Column.module.css';
-import { Header } from '../header/Header';
+import { Header } from '../../../../layouts/header';
 import { IconButton, OutlinedButton } from '../../../../components/button';
 import { Trash } from 'lucide-react';
 import type { ColumnData } from '../../types';

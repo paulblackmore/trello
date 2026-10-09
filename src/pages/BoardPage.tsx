@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Column } from '../features/column/components/column/Column';
 import { DEFAULT_COLUMNS_DATA } from '../data';
-import { Header } from '../components/header';
+import { Header as HeaderLayout } from '../layouts/header';
 import styles from './BoardPage.module.css';
 import type { ColumnData } from '../features/column/types';
 import { StatusCount } from '../features/header/components/status-count/StatusCount';
@@ -24,11 +24,13 @@ export default function BoardPage() {
 
   return (
     <>
-      <Header>
-        <CountDown />
-        <StatusCount />
-        <Actions handleAddColumn={handleAddColumn} />
-      </Header>
+      <header className={styles.header}>
+        <HeaderLayout>
+          <CountDown />
+          <StatusCount />
+          <Actions handleAddColumn={handleAddColumn} />
+        </HeaderLayout>
+      </header>
       <main className={styles.container}>
         {columns.map((column) => (
           <Column key={column.id} column={column as ColumnData} />
