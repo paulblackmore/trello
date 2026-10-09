@@ -1,5 +1,11 @@
+import { MantineProvider } from '@mantine/core';
 import BoardPage from './pages/BoardPage';
+import '@mantine/core/styles.css';
 
 export default function App() {
-  return <BoardPage />;
+  return (
+    <MantineProvider>
+      <BoardPage />
+    </MantineProvider>
+  );
 }
