@@ -1,11 +1,11 @@
 import { Button } from '@mantine/core';
-import styles from './Actions.module.css';
+import { Flex } from '@mantine/core';
 
 type Props = { handleAddColumn: () => void };
 
 export const Actions = ({ handleAddColumn }: Props) => {
   return (
-    <div className={styles.container}>
+    <Flex gap={5}>
       <Button
         variant='outline'
         color='cyan'
@@ -17,6 +17,6 @@ export const Actions = ({ handleAddColumn }: Props) => {
       <Button variant='filled' color='cyan' size='sm' onClick={() => {}}>
         Restart sprint
       </Button>
-    </div>
+    </Flex>
   );
 };

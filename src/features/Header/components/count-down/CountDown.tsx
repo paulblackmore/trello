@@ -1,5 +1,6 @@
+import { Title } from '@mantine/core';
 import { randomNumber } from '../../../../utils';
 
 export const CountDown = () => {
-  return <h5>{`Sprint closing: ${randomNumber} day(s)`}</h5>;
+  return <Title order={5}>{`Sprint closing: ${randomNumber} day(s)`}</Title>;
 };

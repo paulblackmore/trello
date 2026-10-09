@@ -19,16 +19,3 @@
   gap: 0.4375rem;
   width: 100%;
 }
-
-.actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.3125rem;
-}
-
-.title {
-  text-align: left;
-  margin: 0.5rem;
-}

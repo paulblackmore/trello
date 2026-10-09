@@ -1,12 +1,14 @@
 import { STATUS } from '../../const';
-import styles from './StatusCount.module.css';
+import { Flex, Title } from '@mantine/core';
 
 export const StatusCount = () => {
   return (
-    <div className={styles.container}>
+    <Flex justify='space-between' align='flex-start' gap={5}>
       {Object.values(STATUS).map((status) => (
-        <h5 key={status}>{status} (1)</h5>
+        <Title key={status} order={5}>
+          {status} (1)
+        </Title>
       ))}
-    </div>
+    </Flex>
   );
 };

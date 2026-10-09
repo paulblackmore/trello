@@ -7,13 +7,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    background-color: #dcf3f4;
-  }
-}
-
-.text {
-  color: #92c3c3;
-  text-align: center;
 }
