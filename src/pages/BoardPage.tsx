@@ -23,7 +23,14 @@ export default function BoardPage() {
 
   return (
     <Container fluid mih='100vh'>
-      <Flex mih={50} gap='md' justify='space-between' align='center' p='md'>
+      <Flex
+        mih={50}
+        gap='md'
+        justify='space-between'
+        align='center'
+        p='md'
+        bg='#f1f9f1'
+      >
         <CountDown />
         <StatusCount />
         <Actions handleAddColumn={handleAddColumn} />
