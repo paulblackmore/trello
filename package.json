@@ -10,7 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^9.7.1",
+    "@mantine/dates": "^9.7.1",
+    "@mantine/dropzone": "^9.7.1",
+    "@mantine/hooks": "^9.7.1",
+    "@mantine/modals": "^9.7.1",
+    "@mantine/notifications": "^9.7.1",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.23",
     "lucide-react": "^1.49.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
