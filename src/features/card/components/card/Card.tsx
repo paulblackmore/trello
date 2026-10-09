@@ -6,6 +6,7 @@ import {
   Text,
   Flex,
   Card as MantineCard,
+  Stack,
 } from '@mantine/core';
 
 type Props = {
@@ -14,13 +15,7 @@ type Props = {
 
 export const Card = ({ card }: Props) => {
   return (
-    <Flex
-      gap={5}
-      direction='column'
-      justify='space-between'
-      align='flex-start'
-      p={10}
-    >
+    <Stack gap={5} justify='space-between' align='flex-start' p={10}>
       <MantineCard shadow='sm' padding='lg' withBorder>
         <Flex h={25} justify='space-between' align='center' w='100%' gap={5}>
           <Title order={6}>{card.title}</Title>
@@ -32,6 +27,6 @@ export const Card = ({ card }: Props) => {
           {card.description}
         </Text>
       </MantineCard>
-    </Flex>
+    </Stack>
   );
 };

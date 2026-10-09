@@ -10,6 +10,7 @@ import {
   Title,
   Text,
   Paper,
+  Stack,
 } from '@mantine/core';
 type Props = {
   column: ColumnData;
@@ -29,7 +30,7 @@ export const Column = ({ column }: Props) => {
           </ActionIcon>
         </Flex>
       </Flex>
-      <Flex justify='center' align='flex-start' direction='column'>
+      <Stack justify='center' align='flex-start'>
         {column.cards.length ? (
           column.cards.map((card) => <Card key={card.id} card={card} />)
         ) : (
@@ -37,7 +38,7 @@ export const Column = ({ column }: Props) => {
             <EmptyCard />
           </UnstyledButton>
         )}
-      </Flex>
+      </Stack>
     </Paper>
   );
 };
